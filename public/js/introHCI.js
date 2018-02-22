@@ -11,6 +11,8 @@ $(document).ready(function() {
 function initializePage() {
 	// your code here
 	$('.likeBtn').click(function() {
-		ga("send", "event", 'button', 'like', 'click');
+		gtag('event', 'click', {
+			'event_category': 'likes',
+		});
 	});
 }
